@@ -48,8 +48,8 @@ class Hello:
 
 
 class GetArticle:
-    def GET(self):
 
+    def GET(self):
         print('获取文章的方法')
         conn = MySQLdb.connect(host='localhost', user='root', password='root',
                                db='webpy', port=3306, coursorclass=MySQLdb.cursors.Dictcursor)
