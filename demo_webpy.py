@@ -1,3 +1,4 @@
+import MySQLdb
 import web
 from web import db
 
@@ -45,7 +46,7 @@ class Hello:
         # 如果使用模板
         return render.index(name)
 
-"""
+
 class GetArticle:
     def GET(self):
 
@@ -59,7 +60,7 @@ class GetArticle:
         conn.close()
         print(r)
         return render.article(r)
-"""
+
 
 if __name__ == "__main__":
     app.run()
